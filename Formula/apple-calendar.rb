@@ -6,7 +6,8 @@ class AppleCalendar < Formula
   license "MIT"
 
   depends_on macos: :sonoma # macOS 14+ (EventKit requestFullAccessToEvents)
-  depends_on xcode: :build  # provides the Swift toolchain to build from source
+  # No `depends_on xcode` — the Command Line Tools' Swift toolchain builds this
+  # package (verified), so requiring full Xcode would needlessly block CLT-only Macs.
 
   def install
     # --disable-sandbox lets the in-build codesign step write the signature.

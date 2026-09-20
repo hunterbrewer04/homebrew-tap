@@ -1,8 +1,8 @@
 class AppleCalendar < Formula
   desc "Fast Apple Calendar CLI + MCP server (EventKit, read + write)"
   homepage "https://github.com/hunterbrewer04/apple-calendar-mcp"
-  url "https://github.com/hunterbrewer04/apple-calendar-mcp/archive/refs/tags/v1.4.1.tar.gz"
-  sha256 "ad4174b4bcc14e4e442445098b31fb9fb6e8929362af779b23c9240f3ebf8165"
+  url "https://github.com/hunterbrewer04/apple-calendar-mcp/archive/refs/tags/v1.4.2.tar.gz"
+  sha256 "ebb5feab4eda966bc5b79e56644ed916a8fa9c03d183270a316172de9db49c11"
   license "MIT"
 
   depends_on macos: :sonoma # macOS 14+ (EventKit requestFullAccessToEvents)
